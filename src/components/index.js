@@ -1,4 +1,6 @@
-import Header from './common/header'
-import Footer from './common/footer'
+import Header from './common/Header/Header'
+import Footer from './common/Footer/Footer'
+import Home from './home/Home'
+import PageNotFound from './pageNotFound/PageNotFound'
 
-export {Header, Footer}
+export {Header, Footer, Home, PageNotFound}
