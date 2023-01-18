@@ -6,3 +6,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.X-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Y-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p, ul{
+    margin: 0;
+}

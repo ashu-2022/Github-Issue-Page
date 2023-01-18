@@ -1,0 +1,30 @@
+.footer-container{
+    width: 90vw;
+    border-top: 1px solid #d0d7de;
+    margin: auto;
+    min-height: 100px;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    img{
+        width: 24px;
+        flex-grow: 0;
+        margin:0px 20px;
+        &:hover{
+            opacity: 0.8;
+        }     
+    }
+}
+
+.left-footer-links, .right-footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-grow: 2;
+}
