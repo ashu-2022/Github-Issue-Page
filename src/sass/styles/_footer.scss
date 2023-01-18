@@ -28,3 +28,34 @@
     gap: 15px;
     flex-grow: 2;
 }
+
+
+@media screen and (max-width:996px) {
+
+
+    .footer-container{
+        flex-direction: column;
+
+        > div:nth-child(2){
+            order: 3;
+            margin:auto;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .left-footer-links, .right-footer-links{
+        gap: 10px;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .left-footer-links, .right-footer-links{
+        >:nth-child(-n+2){
+            display: none;
+            // background-color: yellow;
+            
+        }
+    }
+}

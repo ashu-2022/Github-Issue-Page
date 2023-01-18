@@ -1,6 +1,6 @@
 .issue-card{
     // background-color: aqua;
-    min-height: 100vh;
+    min-height: 30vh;
     max-width: 90vw;
     margin: auto;
     border: 1px solid #d0d7de;
@@ -48,5 +48,18 @@
             object-fit: cover;
             cursor: pointer;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .issues-menu{
+        margin-left:0;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .openClose{
+        flex-direction: column;
     }
 }

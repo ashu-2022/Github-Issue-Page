@@ -48,8 +48,7 @@ const IssueItem = ({
               </span>{" "}
             </div>
           </div>
-          <div className="issue-comment-group">
-            <div></div>
+          <div className="issue-comment-group d-none d-sm-flex">
             <div className="issue-pullRequest" style={{ visibility: !pullRequest ? 'hidden' : '' }}>
               {
                 pullRequest && 
