@@ -3,9 +3,6 @@ import { IssuesMenu, IssuesStatus } from '../../constants'
 import {dropMenu} from '../../assets'
 const IssueCardHeader = () => {
   return (
-    <>
-
-   
     <div className='issue-card-header'>
       <div className='issues-live d-none d-lg-flex' >
         {IssuesStatus.map((item) => (
@@ -25,7 +22,6 @@ const IssueCardHeader = () => {
           ))}
       </ul>
       </div>
-      </>
   )
 }
 
