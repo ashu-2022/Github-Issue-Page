@@ -1,17 +1,21 @@
 import React from 'react'
 import { issues, comment, pullRequests } from "../../assets";
+import {findTimeAgo} from '../../utils/timeDiff'
 
 const IssueItem = ({
     title,
     url,
     number,
-    updatedAt,
+    createdAt,
     user,
     comments,
     commentsURL,
     labels,
     pullRequest
 }) => {
+
+  let issueCreatedAgo = findTimeAgo(createdAt);
+
     return (
         <div className="issueItem">
           <div className="me-2">
@@ -38,7 +42,8 @@ const IssueItem = ({
                 ))}
             </div>
             <div className="issue-opened">
-              #{number} opened {updatedAt} by{" "}
+              {/* #{number} opened {createdAt} by{" "} */}
+              #{number} opened {issueCreatedAgo} by{" "}
               <span>
                 <a
                   href={`https://github.com/facebook/react/issues/created_by/${user}`}
