@@ -23,8 +23,7 @@ const issueSlice = createSlice({
     })
     builder.addCase(fetchIssues.fulfilled, (state, action) => {
       state.loading = false
-      // state.issues = [...state.issues, ...action.payload]
-      state.issues = [...new Map([...state.issues, ...action.payload].map(item => [item['id'], item])).values()];
+      state.issues = [...state.issues, ...action.payload]
       state.error = ''
     })
     builder.addCase(fetchIssues.rejected, (state, action) => {
